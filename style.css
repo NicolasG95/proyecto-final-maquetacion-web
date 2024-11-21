@@ -61,6 +61,7 @@ display: flex; /*Esto sirve para que los elementos de la lista ul se pongan en l
     font-size:  35px; 
     z-index: 101; /*para que esté sobre el header*/
     cursor: pointer; /*para que aparezca la manito cuando ponemos el mouse encima*/
+    display: none;
 }
 
 #menu-toggle{
@@ -115,7 +116,7 @@ line-height: 1.9;
 }
 
 .hero-img img{
-    width: 400px;
+    width: 380px;
     margin: 10px 0 0 10%;
     height: auto;
     transition: all 5s linear; /*esto hace que la transicion sea lineal*/
@@ -269,8 +270,7 @@ line-height: 1.9;
     display: block;
     margin: 7px;
 }
-
-#menu-toggle:checked + label.menu-icon-action + ul{
+.navlist.open{
     right: 0;
 }
 }
